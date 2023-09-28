@@ -1,0 +1,124 @@
+.special-feature-card {
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding-top: 54px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    background-size: cover;
+    
+    .content {
+        .title {
+            color: $color-title;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 36px;
+            text-transform: capitalize;
+            margin-bottom: 22px;
+        }
+    }
+    
+    &--style-1 { 
+        background-image: url("../images/special-features/speed-bg.jpg");
+    }
+
+    &--style-2 {
+        background-image: url("../images/special-features/Installer-bg.jpg");
+        padding-top: 46px;
+        
+        .content {
+            .title {
+                color: $color-white;
+            }
+        }
+    }
+    
+    &--style-3 {
+        padding-top: 38px;        
+        background: #E3E3E3;
+    }
+    
+    &--style-4 {
+        background-image: url("../images/special-features/filter-bg.jpg");
+        padding-top: 42px;
+        .content {
+            position: relative;
+            .title {
+                text-align: left;
+                color: $color-white;
+                position: absolute;
+                right: 20%;
+                top: 0;
+            }
+        }
+    }
+
+    &--style-5 { 
+        position: relative;
+        background-image: url("../../images/special-features/plugins-bg.jpg");
+        padding-top: 62px;
+        z-index: 0;
+        margin-bottom: 0;
+        .content {
+            .title {
+                color: $color-white;
+                margin-bottom: 12px;
+                font-size: 25px;
+                @include media-only('sm', min) {
+                    font-size: 30px;
+                }
+            }
+            .note {
+                border-radius: 32px;
+                background: #FF3D41;
+                color: $color-white;
+                display: inline-block;
+                padding: 0 14px;
+                margin-bottom: 0;
+
+                font-size: 17px;
+                text-align: center; 
+                font-weight: 600;
+                line-height: 42px;
+                text-transform: capitalize;
+            }
+        }
+
+        .plugin-shape-parallax-list {
+            li {
+                position: absolute;
+                z-index: -1;
+                &:nth-child(1) {
+                    top: 126px;
+                    left: -14px;
+                }
+                &:nth-child(2) {
+                    bottom: -74px;
+                    right: 25px;
+                }
+            }
+        }
+    }
+
+    &--style-6 {
+        background-color: #F6EFE4;
+        padding-top: 42px;
+        .content {
+            .title {
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &--style-7 {
+        background-color: #F4F4F4;
+        padding-top: 53px;
+        padding-bottom: 70px;
+
+        .content {
+            .title {
+                line-height: 30px;
+                margin-bottom: 38px;
+            }
+        }
+    }
+}

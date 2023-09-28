@@ -1,0 +1,23 @@
+.demos-section {
+    background-color: #F2FCFC;    
+    z-index: 0;
+    .title-wrapper {
+        margin-bottom: 45px;
+        .section-title {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 58px;
+        }
+    }
+
+    .shape-parallax-list {
+        li {
+            position: absolute;
+            z-index: -1;
+            &:nth-child(1) {
+                right: 166px;
+                bottom: 0;
+            }
+        }
+    }
+}

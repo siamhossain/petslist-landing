@@ -1,0 +1,21 @@
+.feature-section {
+    background-color: #F9F9F9;
+    position: relative;
+    z-index: 0;
+    padding: 130px 0;
+
+    .title-wrapper {
+        position: relative;
+        margin-bottom: 50px;
+        .section-title {
+            font-size: 36px;
+            line-height: 40px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .para-text {
+            font-size: 17px;
+            line-height: 28px;
+        }
+    }
+}

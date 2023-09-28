@@ -1,0 +1,30 @@
+.preview-box {
+    a.demo-preview-img {
+        border-radius: 8px;
+        border: 1px solid #D9EEEE;
+        background: $color-white;
+        padding: 15px;
+        margin-bottom: 15px;
+        img {
+            @include transition;
+            width: 100%;
+        }
+        &:hover {
+            transform: translateY(-7px);
+            img {
+                filter: blur(3px);
+            }
+        }
+    }
+    .content {
+        h3.title {
+            a {
+                color: $color-title;
+                font-size: 24px;
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+

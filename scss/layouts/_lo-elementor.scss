@@ -1,0 +1,71 @@
+.elementor-section {
+    background-image: url("../images/elementor/elementor-section-bg.jpg");
+    @include background-content;
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 0;
+    padding: 64px 37px 64px 65px;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    @include media-only ('md', min) {
+        
+    }
+
+    .elementor-content-wrapper {
+        .elemento-logo {
+            margin-bottom: 25px;
+        }
+    }
+
+
+    .title-wrapper {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 20px;
+        .section-title {
+            color: $color-white;
+            margin-bottom: 20px;
+            line-height: 36px;
+            width: 100%;
+        }
+        .para-text {
+            color: $color-white;
+        }
+        .title-shape {
+            position: absolute;
+            right: 10%;
+            bottom: -14%;
+        }
+    }
+
+    ul.feature-list {
+        
+        @include media-only('sm', min) {
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+        }
+    }
+
+    .elementor-img-item-wrapper {
+        position: relative;
+        display: inline-block;
+        @include media-only ('md', min) {
+
+        }
+    }
+
+    .shape-parallax-list {
+        li {
+            position: absolute;
+            z-index: -1;
+            &:nth-child(1) {
+                left: -46px;
+                bottom: 0;
+                top: unset;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.purchase-btn {
+    border-radius: 100px;
+    border: 1px solid #CD1B1E;
+    background: linear-gradient(94deg, #FF282C 11.41%, #FF4E51 98.99%);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    color: $color-white;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: normal;
+    padding: 13px 33px 11px 33px;
+    @include transition;
+    position: relative;
+    z-index: 10;
+
+    &::after {
+        content: "";
+        background: linear-gradient(94deg, #ffffff 11.41%, #ffffff 98.99%);
+        position: absolute;
+        border-radius: 100px;
+        width: 100%;
+        height: 100%;
+        top: 0; 
+        left: 0;
+        opacity: 0;
+        z-index: -10;
+        transition: opacity 0.5s;
+    
+    }
+
+    &:hover {
+        // letter-spacing: 0.3px;
+        &::after {
+            opacity: 1;
+        }
+        color: $color-title;
+        border-color: $color-white;
+    }
+}
